@@ -1,0 +1,68 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.logo{
+    width: 80px;
+}
+
+body{
+    padding-top: 20px;
+    padding-right: 100px;
+    padding-left: 100px;
+}
+
+.conteudo{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+span{
+    color: #017143;
+    font-size: 70px;
+    font-weight: 900;
+}
+
+
+h2{
+    color: #333;
+    font-size: 60px;
+    font-weight: 500;
+}
+
+p{
+    font-size: 16px;
+}
+
+button{
+    background: #017143;
+    border: none;
+    color: #ffffff;
+    border-radius: 40px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+button:hover{
+    opacity: 0.7;
+}
+
+
+.foto-principal{
+    width: 300px;
+}
+
+.botao-menu{
+    width: 60px;
+    transition: 0.8s;
+    cursor: pointer;
+}
+
+.botao-menu:hover{
+    transform: translateY(-25px);
+    
+}
