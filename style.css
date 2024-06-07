@@ -1,68 +1,168 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
-.logo{
+.logo {
     width: 80px;
 }
 
-body{
+body {
     padding-top: 20px;
     padding-right: 100px;
     padding-left: 100px;
 }
 
-.conteudo{
+.conteudo {
     width: 100%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-span{
+
+.caixa-texto {
+    width: 800px;
+}
+
+.caixa-imagem {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 250px;
+}
+
+.fotos-pequenas {
+    display: flex;
+    justify-content: center;
+}
+
+span {
     color: #017143;
     font-size: 70px;
     font-weight: 900;
 }
 
 
-h2{
+h2 {
     color: #333;
     font-size: 60px;
     font-weight: 500;
 }
 
-p{
+p {
     font-size: 16px;
 }
 
-button{
+button {
     background: #017143;
     border: none;
     color: #ffffff;
     border-radius: 40px;
     cursor: pointer;
     padding: 10px;
+    margin-top: 10px;
+
 }
 
-button:hover{
+button:hover {
     opacity: 0.7;
 }
 
 
-.foto-principal{
-    width: 300px;
+.foto-principal {
+    width: 340px;
 }
 
-.botao-menu{
+.botao-menu {
     width: 60px;
     transition: 0.8s;
     cursor: pointer;
+    margin: 10px;
 }
 
-.botao-menu:hover{
+.botao-menu:hover {
     transform: translateY(-25px);
-    
+
+}
+
+.circulo {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #017143;
+    clip-path: circle(600px at right 800px);
+}
+
+@media screen and (max-width:1050px) {
+
+    .logo {
+        width: 110px;
+        display: block;
+        margin-top: 10%;
+        margin-left: 35%;
+    }
+
+    body {
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+
+    }
+
+    .caixa-imagem {
+        display: block;
+        margin: 0;
+        padding-top: 10%;
+        padding-left: 25%;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    span {
+        font-size: 20px;
+    }
+
+    .conteudo {
+        display: block;
+    }
+
+    p {
+        display: none;
+    }
+
+    .caixa-texto {
+        padding-left: 30%;
+        padding-top: 20%;
+    }
+
+
+    .circulo {
+        margin-top: 60%;
+        clip-path: circle(200px at center 300px);
+
+    }
+
+    .foto-principal {
+        position: static;
+        width: 200px;
+    }
+
+    .fotos-pequenas {
+        padding-top: 20%;
+        margin-left: 5%;
+    }
+
+    button{
+        margin-left: 20px;
+    }
+
 }

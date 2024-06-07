@@ -13,11 +13,12 @@
 </head>
 
 <body>
+    <div class="circulo"></div>
 
     <img src="./img/logo.png" alt="logo-starbucks" class="logo">
 
     <div class="conteudo">
-        <div>
+        <div class="caixa-texto">
             <h2>It's not just Coffe <br> It's <span>Starbucks</span></h2>
             <p>Every day, Starbucks partners (employees) go to work hoping to do two things: share great coffee with
                 their
@@ -25,18 +26,32 @@
             <button>Learn More</button>
         </div>
 
-        <div>
+        <div class="caixa-imagem">
             <img src="./img/img1.png" alt="principal" class="foto-principal">
         </div>
     </div>
 
     <div class="fotos-pequenas">
-        <img src="./img/img-pequena1.png" alt="foto1" class="botao-menu">
-        <img src="./img/img-pequena2.png" alt="foto2" class="botao-menu">
-        <img src="./img/img-pequena3.png" alt="foto3" class="botao-menu">
+        <img src="./img/img-pequena1.png" alt="foto1" class="botao-menu" onclick="trocaImagem('./img/img1.png'); trocaCor('#017143')"  >
+        <img src="./img/img-pequena2.png" alt="foto2" class="botao-menu" onclick="trocaImagem('./img/img2.png'); trocaCor('#eb7495')"  >
+        <img src="./img/img-pequena3.png" alt="foto3" class="botao-menu" onclick="trocaImagem('./img/img3.png'); trocaCor('#d752b1')"  >
     </div>
 
 
 </body>
+
+<script>
+    let imagem = document.querySelector(".foto-principal")
+    let circulo = document.querySelector(".circulo")
+
+    function trocaImagem(endereco) {
+        imagem.src = endereco
+    }
+
+    function trocaCor(cor){
+        circulo.style.background = cor
+    }
+
+</script>
 
 </html>
